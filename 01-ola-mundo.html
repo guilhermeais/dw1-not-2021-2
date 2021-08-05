@@ -20,19 +20,52 @@
   </body>
 
   <script>
-    /* O Problema
-       
+    /* O Problema:
+    - Temos a varíavel Price, Quantity e Total
+        No qual, price é o preço de algo e quantity é a quantidade de algo. O Total, será uma formula
+        a formula (price*quantity)
+        E o problema é:
+            Como podemos pegar o valor total, usando a formula acima, toda vez que price e/ou quantity atualizar? 
     */
+   class Dep {
+       constructor (){
+           this.subscribers = []
+       }
+
+       depend(){
+        if (target && !this.subscribers.includes(target)) {
+            this.subscribers.push(target)
+        }
+       }
+
+       notify(){
+           this.subscribers.forEach(sub => sub())
+       }
+   }
+
+   const dep = new Dep()
     const totalElement = document.getElementById("total");
     const priceInput = document.getElementById("priceInput");
     const quantityInput = document.getElementById("quantityInput");
 
-
     let price = parseInt(priceInput.value ? priceInput.value : 0);
     let quantity = parseInt(quantityInput.value ? priceInput.value : 0);
     let total = 0;
+    let target = null
 
- 
+    function watcher(myFunc){
+        target = myFunc
+        dep.depend()
+        target()
+        target = null
+    }
+
+    watcher(()=>{
+        price = parseInt(priceInput.value ? priceInput.value : 0);
+        quantity = parseInt(quantityInput.value ? quantityInput.value : 0);
+        total = price * quantity
+        totalElement.value = total
+    })
 
   </script>
 </html>
