@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minha primeira página HTML</title>
+  </head>
+  <body>
+    <p>Hello, world!</p>
+    <form>
+      <label>Preço</label>
+      <input oninput="dep.notify()" id="priceInput" type="number" />
+
+      <label>Quantidade</label>
+      <input oninput="dep.notify()" id="quantityInput" type="number" />
+
+      <input readonly id="total"></div>
+    </form>
+  </body>
+
+  <script>
+    /* O Problema
+       
+    */
+    const totalElement = document.getElementById("total");
+    const priceInput = document.getElementById("priceInput");
+    const quantityInput = document.getElementById("quantityInput");
+
+
+    let price = parseInt(priceInput.value ? priceInput.value : 0);
+    let quantity = parseInt(quantityInput.value ? priceInput.value : 0);
+    let total = 0;
+
+ 
+
+  </script>
+</html>
