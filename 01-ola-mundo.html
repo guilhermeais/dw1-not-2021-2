@@ -48,24 +48,26 @@
     const priceInput = document.getElementById("priceInput");
     const quantityInput = document.getElementById("quantityInput");
 
-    let price = parseInt(priceInput.value ? priceInput.value : 0);
-    let quantity = parseInt(quantityInput.value ? priceInput.value : 0);
+    let product = { 
+        price = parseInt(priceInput.value ? priceInput.value : 0),
+        quantity = parseInt(quantityInput.value ? priceInput.value : 0)
+    }
     let total = 0;
     let target = null
 
-    function watcher(myFunc){
-        target = myFunc
-        dep.depend()
-        target()
-        target = null
-    }
+    // function watcher(myFunc){
+    //     target = myFunc
+    //     dep.depend()
+    //     target()
+    //     target = null
+    // }
 
-    watcher(()=>{
-        price = parseInt(priceInput.value ? priceInput.value : 0);
-        quantity = parseInt(quantityInput.value ? quantityInput.value : 0);
-        total = price * quantity
-        totalElement.value = total
-    })
+    // watcher(()=>{
+    //     price = parseInt(priceInput.value ? priceInput.value : 0);
+    //     quantity = parseInt(quantityInput.value ? quantityInput.value : 0);
+    //     total = price * quantity
+    //     totalElement.value = total
+    // })
 
   </script>
 </html>

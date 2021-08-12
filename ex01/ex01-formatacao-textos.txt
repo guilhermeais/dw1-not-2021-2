@@ -1,0 +1,26 @@
+A linguagem HTML[*]
+
+Qualquer um que tenha perdido a noção de tempo usando um computador conhece a propensão a sonhar, a urgência de realizar sonhos e a tendência a ficar sem almoçar.
+— Tim Berners-Lee
+
+HTML (abreviação para a expressão inglesa HyperText Markup Language, que significa: "Linguagem de Marcação de Hipertexto", é uma linguagem de programação de marcação utilizada na construção de páginas na Web. Documentos HTML podem ser interpretados por navegadores.
+
+A linguagem em si é formada por tags, como <p> e <h1>.
+
+História
+
+Tim Berners-Lee (físico britânico) criou o HTML original (e outros protocolos associados como o HTTP) em uma estação NeXTcube usando o ambiente de desenvolvimento NeXTSTEP. Na época a linguagem não era uma especificação, mas uma coleção de ferramentas para resolver um problema de Tim: a comunicação e disseminação das pesquisas entre ele e seu grupo de colegas. Sua solução, combinada com a então emergente internet pública (que tornar-se-ia a Internet) ganhou atenção mundial.
+
+A linguagem foi definida em especificações formais na década de 1990, inspiradas nas propostas originais de Tim Berners-Lee. A primeira publicação foi esboçada por Berners-Lee e Dan Connolly, e publicada em 1993. Foi criado um grupo de trabalho para o HTML no ano seguinte, que publicou o HTML 2.0 em 1995. Desde 1996, as especificações HTML vêm sendo mantidas, com o auxílio de fabricantes de software, pelo World Wide Web Consortium (W3C).
+
+O endereço da W3C no Brasil é:
+
+Av. das Nações Unidas, 11541, 7° andar
+São Paulo – SP
+04578-000
+
+Apesar disso, em 2000 a linguagem tornou-se também uma norma internacional (ISO/IEC 15445:2000). A recomendação HTML 4.01 foi publicada no final de 1999 pelo W3C.
+
+Em janeiro de 2008 o W3C publicou a especificação do HTML5 como Working Draft. A versão 5 do HTML foi oficializada em 2014.
+
+[*]Fonte: adaptado da Wikipedia
